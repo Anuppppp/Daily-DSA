@@ -18,13 +18,11 @@ Output: 49   // 7*7
 
 #  Naive Approach
 
-# def computing_power(x, n):
-#     res = 1
-#     for i in range(n):
-#         res = res * x
-#     return res
-
-
+def computing_power(x, n):
+    res = 1
+    for i in range(n):
+        res = res * x
+    return res
 
 
 
