@@ -30,15 +30,6 @@ def sieve_of_eratosthenes(n):
     return primes
 
 
-
-
-
-
-
-
-
-
-
 num = int(input("Enter a number : ", ))
 print(sieve_of_eratosthenes(num))
 
