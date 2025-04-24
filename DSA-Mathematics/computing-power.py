@@ -37,6 +37,5 @@ def computing_power(x, n):
         return temp
     else:
         return temp * x
-    
 
-print(computing_power(4, 4))
+print(computing_power(2, 3))

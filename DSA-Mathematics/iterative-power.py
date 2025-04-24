@@ -39,3 +39,23 @@ def power_naive(x, n):
 # Test cases
 print(power_naive(2, 3))  # Output: 8
 print(power_naive(7, 2))  # Output: 49
+
+# Efficient Approach
+
+def power_efficient(x, n):
+    result = 1
+    while n > 0:
+        # If the least significant bit is 1, multiply result by x
+        if n % 2 == 1:
+            result *= x
+        
+        # Square the base
+        x *= x
+        # Right shift the exponent (divide by 2)
+        n //= 2
+    
+    return result
+
+# Test cases
+print(power_efficient(2, 3))  # Output: 8
+print(power_efficient(7, 2))  # Output: 49
